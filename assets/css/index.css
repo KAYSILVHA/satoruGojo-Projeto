@@ -1,0 +1,241 @@
+@font-face{
+  font-family: "Jujutsu";
+  src: url('../fonte/Jujutsu Kaisen.ttf');
+}
+
+:root{
+  --font-destaque: "Jujutsu";
+  --font-padrao: 'Jolly Lodger', cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-padrao);
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100vw;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+}
+
+nav{
+  padding: 0 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  text-shadow: 30px 8px 20px #9E00FF;
+  font-size: 2.5em;
+  color: white;
+  -webkit-text-stroke: 0.5px #9E00FF;
+}
+
+.title{
+  font-family: var(--font-destaque);
+}
+
+.first{ 
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first::before{
+  content: "";
+  background-image: url('../imagens/gojo-satoru-jujutsu-kaisen.gif');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.middle-section{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../imagens/bb77a7934fe03260af8380f63ae3f6fe.jpg');
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 50px 0px #000;
+}
+
+
+.middle-section h2{
+  position: relative;
+  top: 65%;
+  left: 10%;
+  text-shadow: 20px 8px 20px #9E00FF;
+  font-size: 100px;
+  color: white;
+  
+}
+
+
+.logo img{
+  filter: invert(100%);
+  width: 250px;
+}
+
+.two{
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  background-image: url('../imagens/Purple_Nebula_Universe_Space_Abstract_Design_medium.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 78%;
+  background-position: bottom;
+  align-items: center;
+  box-shadow: 0px 4px 50px #000;
+}
+
+.text-two,
+.text-three{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60vw;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+.text-two p,
+.text-three p{
+  width: 40%;
+}
+
+.satoru{
+  display: flex;
+  justify-content: flex-start;
+  width: 40vw;
+}
+
+.satoru img{
+  position: relative;
+  height: 80vh;
+}
+
+
+.title.titleTwo,
+.title.titleThree,
+.title.titleFour{
+  font-size: 3.5em;
+  text-shadow: 20px 8px 20px #9E00FF;
+}
+
+.three{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  text-align: justify;
+}
+
+.three::before{
+  content: "";
+  background-image: url('../imagens/Satoru-Gojo-Jujutsu-Kaisen-2-scaled.webp');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.four{
+  margin-top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.four::before{
+  content: "";
+  background-image: url('../imagens/gojo-satoru.jpg');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 90vh;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+
+.middle-four{
+  color: white;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  background-image: url('../imagens/quadro-ceu-estrelado-1.webp');
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 80px;
+  font-size: 40px;
+  box-shadow: 0px 4px 50px 0px #000;
+  box-shadow: 50px 8px 50px  rgba(0, 0, 0, 0.30);
+}
+
+.text-four{
+  width: 50%;
+  height: 100%;
+}
+
+.text-four h2{
+  position: relative;
+  width: 100vw;
+}
+
+.image-four{
+  width: 30%;
+  height: 100%;
+}
+
+
+.image-four img{
+  width: 900px;
+  height: 75vh;
+  position: relative;
+  bottom: 45px;
+  right: 50%;
+}
+
